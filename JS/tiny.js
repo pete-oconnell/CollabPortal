@@ -3,6 +3,7 @@ tinymce.init({
     plugins: 'image code link save',
     toolbar: 'save | undo redo | link image | code',
     height: 800,
+    image_advtab: true,
 
     /* enable title field in the Image dialog*/
     image_title: true,
