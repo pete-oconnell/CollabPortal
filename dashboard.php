@@ -25,7 +25,7 @@ include_once("template/header.php");
             </ul>
         </div>
     </div>
-    <div class="right-content">
+    <div class="right-content recent">
         <h3>Details</h3>
         <svg class="svg-icon" data-icon="history" role="presentation" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"></path>
