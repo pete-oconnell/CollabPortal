@@ -80,7 +80,7 @@ tinymce.init({
             var commentID = $.trim($.get('comment.php', function(data, status) { console.log(data); return data;}));
             var comment = prompt('Comment with?');
             editor.annotator.annotate('alpha', {
-              uid: commentID,
+              uid: parseInt(commentID),
               comment: comment
             });
             editor.focus();
