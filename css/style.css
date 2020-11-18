@@ -44,20 +44,19 @@ body
 .grid-container 
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
       "header header header header"
-      "left-content content content right-content"
-      "left-content content content right-content";
+      "left-content content content content right-content"
+      "left-content content content content right-content";
 }
 .header 
 { 
     grid-area: header;
     background: #206EA7; 
     margin-bottom: 10px;  
-    box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, 0.06);
 }
   
 .left-content 
@@ -65,7 +64,11 @@ body
     grid-area: left-content; 
     margin-left: 10px;
 }
-.right-content { grid-area: right-content; }
+.right-content 
+{ 
+    grid-area: right-content; 
+
+}
 .content 
 { 
     grid-area: content;
