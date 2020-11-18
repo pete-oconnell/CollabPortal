@@ -41,6 +41,11 @@ h3
     background: #206EA7; 
     margin-bottom: 10px;  
 }
+
+.header img
+{
+    width:30px;
+}
   
 .left-content 
 { 
