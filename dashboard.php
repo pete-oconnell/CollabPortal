@@ -71,8 +71,10 @@ include_once("template/header.php");
 </svg>Delete<br>
     </div>
     <div class="content">
-        <h3>Latest Additions</h3>
-        no fking idea
+        <div class="nfi">
+            <h3>Latest Additions</h3>
+            no fking idea
+        </div>
     </div>
 </div>
 
