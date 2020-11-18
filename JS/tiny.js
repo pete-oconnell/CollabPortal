@@ -2,14 +2,8 @@ tinymce.init({
     selector: 'textarea#full-featured-non-premium',
     plugins: 'image code link save tinycomments',
     tinycomments_author: 'bob',
-    toolbar: 'save | undo redo | link image | code | addcomment showcomments',
+    toolbar: 'save | undo redo | link image | code | annotate-alpha',
     menubar: 'file edit view insert format tools tc',
-    menu: {
-        tc: {
-          title: 'TinyComments',
-          items: 'addcomment showcomments deleteallconversations'
-        }
-      },
     height: 800,
     image_advtab: true,
 
@@ -62,7 +56,7 @@ tinymce.init({
   
       input.click();
     },
-    content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+    content_style: '.mce-annotation { background-color: darkgreen; color: white; } ' + 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
     save_onsavecallback: function () { 
         var formData = {
             'content'              : $('textarea[name=full-featured-non-premium]').val()
@@ -77,5 +71,39 @@ tinymce.init({
             }   
         }); 
         console.log('Saved'); 
-    }
+    },
+
+    setup: function (editor) {
+        editor.ui.registry.addButton('annotate-alpha', {
+          text: 'Annotate',
+          onAction: function() {
+            var comment = prompt('Comment with?');
+            editor.annotator.annotate('alpha', {
+              uid: 'custom-generated-id',
+              comment: comment
+            });
+            editor.focus();
+          },
+          onSetup: function (btnApi) {
+            editor.annotator.annotationChanged('alpha', function (state, name, obj) {
+              console.log('Current selection has an annotation: ', state);
+              btnApi.setDisabled(state);
+            });
+          }
+        });
+    
+        editor.on('init', function () {
+          editor.annotator.register('alpha', {
+            persistent: true,
+            decorate: function (uid, data) {
+              return {
+                attributes: {
+                  'data-mce-comment': data.comment ? data.comment : '',
+                  'data-mce-author': data.author ? data.author : 'anonymous'
+                }
+              };
+            }
+          });
+        });
+      }
   });
