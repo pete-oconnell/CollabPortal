@@ -74,7 +74,7 @@ tinymce.init({
     },
 
     setup: function (editor) {
-        var commentID = $.get('comment.php', function(data, status) { return data;});
+        var commentID = $.get('comment.php', function(data, status) { alert("Data: " + data + "\nStatus: " + status);});
         console.log(commentID);
         editor.ui.registry.addButton('annotate-alpha', {
           text: 'Annotate',
