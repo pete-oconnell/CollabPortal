@@ -55,10 +55,12 @@ tinymce.init({
     },
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
     save_onsavecallback: function () { 
-        console.log($("textarea#full-featured-non-premium").val());
+        var formData = {
+            'name'              : $('textarea[name=full-featured-non-premium]').val()
+        };
         $.ajax({   
             type: "POST",
-            data : $("textarea#full-featured-non-premium").serialize(),
+            data : formData,
             cache: false,  
             url: "process.php",   
             success: function(data){
