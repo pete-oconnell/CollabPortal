@@ -2,7 +2,14 @@ tinymce.init({
     selector: 'textarea#full-featured-non-premium',
     plugins: 'image code link save tinycomments',
     tinycomments_author: 'bob',
-    toolbar: 'save | undo redo | link image | code',
+    toolbar: 'save | undo redo | link image | code | addcomment showcomments',
+    menubar: 'file edit view insert format tools tc',
+    menu: {
+        tc: {
+          title: 'TinyComments',
+          items: 'addcomment showcomments deleteallconversations'
+        }
+      },
     height: 800,
     image_advtab: true,
 
