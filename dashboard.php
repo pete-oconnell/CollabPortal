@@ -3,8 +3,8 @@ include_once("template/header.php");
 ?>
 
 <body>
+<div id="container"></div>
 
-</body>
 
 <?php
 include_once("template/footer.php");
