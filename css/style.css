@@ -64,3 +64,14 @@ h3
     grid-area: content;
     background: #222;
 }
+
+.svg-icon {
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    position: relative;
+    bottom: -0.105em;
+    margin-inline-end: 6px;
+    pointer-events: none;
+    fill: currentColor;
+}
