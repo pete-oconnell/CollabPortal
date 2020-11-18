@@ -21,10 +21,12 @@ include_once("template/header.php");
             <li>[av] [user] [activity] [page]</li>
             <li>[av] [user] [activity] [page]</li>
             <li>[av] [user] [activity] [page]</li>
-            
+
         </ul>
     </div>
-    <div class="right-content">this is the right content</div>
+    <div class="right-content">
+        <h3>Details</h3>
+    </div>
     <div class="content">
         <div class="breadcrumb">this > is > a > breadcrumb</div>
     </div>
