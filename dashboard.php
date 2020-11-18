@@ -6,23 +6,24 @@ include_once("template/header.php");
 <div class="grid-container">
     <div class="header"><div class="float-left margin-5"><img src="img/icon.png"> <h1>Collaboration Portal</h1></div><div class="float-right margin-10">right content</div></div>
     <div class="left-content">
+        <div class="recent">
         <h3>Recent Activity</h3>
-        <ul>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-            <li>[av] [user] [activity] [page]</li>
-
-        </ul>
+            <ul>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+                <li>[av] [user] [activity] [page]</li>
+            </ul>
+        </div>
     </div>
     <div class="right-content">
         <h3>Details</h3>

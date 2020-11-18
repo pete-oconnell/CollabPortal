@@ -60,6 +60,12 @@ h3
 {
     list-style-type: none;
 }
+
+.recent
+{
+    background: #222;
+}
+
 .right-content 
 { 
     grid-area: right-content; 
