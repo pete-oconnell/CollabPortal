@@ -81,7 +81,7 @@ tinymce.init({
             console.log(mycommentID);
             var comment = prompt('Comment with?');
             editor.annotator.annotate('alpha', {
-              uid: mycommentID.text,
+              uid: mycommentID,
               comment: comment
             });
             editor.focus();
