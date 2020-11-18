@@ -13,6 +13,11 @@ body
     color: #C0C4C6;
 }
 
+h3
+{
+    font-size: 16px;
+}
+
 .float-left { float: left; }
 .float-right { float: right; }
 .margin-5 { margin: 5px; }
