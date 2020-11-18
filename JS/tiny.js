@@ -61,7 +61,7 @@ tinymce.init({
             cache: false,  
             url: "process.php",   
             success: function(data){
-                $("#results").html(data);                       
+                console.log(data);                       
             }   
         }); 
         console.log('Saved'); 
