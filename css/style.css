@@ -66,6 +66,7 @@ h3
 { 
     grid-area: right-content; 
     margin-left: 10px;
+    padding-left: 10px;
     background: #222;
 
 }
