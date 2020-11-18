@@ -48,7 +48,7 @@ body
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "header header header header"
+      "header header header header header"
       "left-content content content content right-content"
       "left-content content content content right-content";
 }
