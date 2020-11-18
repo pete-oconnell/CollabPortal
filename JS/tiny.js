@@ -2,6 +2,8 @@ tinymce.init({
     selector: 'textarea#full-featured-non-premium',
     plugins: 'image code',
     toolbar: 'undo redo | link image | code',
+    height: 800,
+
     /* enable title field in the Image dialog*/
     image_title: true,
     /* enable automatic uploads of images represented by blob or data URIs*/
