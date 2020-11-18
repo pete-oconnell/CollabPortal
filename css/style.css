@@ -44,13 +44,13 @@ body
 .grid-container 
 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "header header header header header"
-      "left-content content content content right-content"
-      "left-content content content content right-content";
+      "header header header header header header"
+      "left-content content content content content right-content"
+      "left-content content content content content right-content";
 }
 .header 
 { 
@@ -62,7 +62,6 @@ body
 .left-content 
 { 
     grid-area: left-content; 
-    margin-left: 10px;
 }
 .right-content 
 { 
