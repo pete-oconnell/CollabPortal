@@ -80,7 +80,7 @@ include_once("template/header.php");
     <div class="content">
         <div class="nfi">
             <form action="new_save.php" method="post">
-        <textarea id="full-featured-non-premium"><p style="text-align: center; font-size: 15px;"><img title="TinyMCE Logo" src="//www.tiny.cloud/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
+        <textarea id="full-featured-non-premium" name="full-featured-non-premium"><p style="text-align: center; font-size: 15px;"><img title="TinyMCE Logo" src="//www.tiny.cloud/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
   </p>
   <h2 style="text-align: center;">Welcome to the TinyMCE Cloud demo!</h2>
   <p>Please try out the features provided in this full featured example (excluding <a href="https://www.tiny.cloud/apps/">Premium Plugins</a> ).</p>
