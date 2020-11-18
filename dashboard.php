@@ -4,7 +4,7 @@ include_once("template/header.php");
 
 <body>
 <div class="grid-container">
-    <div class="header"><div class="float-left margin-5"><img src="img/icon.svg"></div><div class="float-right margin-10">right content</div></div>
+    <div class="header"><div class="float-left margin-5"><img src="img/icon.png"> - Collaboration Portal</div><div class="float-right margin-10">right content</div></div>
     <div class="left-content">
         <h3>Recent Activity</h3>
         <ul>
