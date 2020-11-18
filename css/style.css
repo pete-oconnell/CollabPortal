@@ -10,7 +10,6 @@ body
     overflow-x: hidden;
     overflow-y: auto;
     background: #111111;
-    margin: 0;
     text-rendering: optimizeLegibility;
     color: #C0C4C6;
 }
@@ -60,7 +59,11 @@ body
     margin-bottom: 10px;  
 }
   
-.left-content { grid-area: left-content; }
+.left-content 
+{ 
+    grid-area: left-content; 
+    margin-left: 10px;
+}
 .right-content { grid-area: right-content; }
 .content 
 { 
