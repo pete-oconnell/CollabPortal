@@ -71,7 +71,7 @@ include_once("template/header.php");
 </svg>Delete<br>
     </div>
     <div class="content">
-        <div class="breadcrumb">this > is > a > breadcrumb</div><br>
+        <h3>Latest Additions</h3>
         no fking idea
     </div>
 </div>
