@@ -46,3 +46,18 @@ body
 {
     float: right;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "header header header header"
+      "left-content content content right-content"
+      "left-content content content right-content";
+  }
+  .header { grid-area: header; }
+  .left-content { grid-area: left-content; }
+  .right-content { grid-area: right-content; }
+  .content { grid-area: content; }
