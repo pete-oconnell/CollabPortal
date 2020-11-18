@@ -3,6 +3,7 @@ include_once("template/header.php");
 ?>
 
 <body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="JS/tinymce/jquery.tinymce.min.js"></script>
     <script src="JS/tinymce/tinymce.min.js"></script>
     <script src="JS/tiny.js"></script>
