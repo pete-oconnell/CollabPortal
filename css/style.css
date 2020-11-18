@@ -66,6 +66,7 @@ body
 .right-content 
 { 
     grid-area: right-content; 
+    margin-left: 10px;
 
 }
 .content 
