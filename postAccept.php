@@ -14,7 +14,7 @@
     if (in_array($_SERVER['HTTP_ORIGIN'], $accepted_origins)) {
       header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
     } else {
-      header("HTTP/1.1 403 Origin Denied");
+      header("HTTP/1.1 403 Origin Denied - ".$_SERVER['HTTP_ORIGIN']);
       return;
     }
   }
