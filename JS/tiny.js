@@ -28,21 +28,40 @@ tinymce.init({
   ],
   importcss_append: true,
   file_picker_callback: function (callback, value, meta) {
-    /* Provide file and text for the link dialog */
-    if (meta.filetype === 'file') {
-      callback('https://www.google.com/logos/google.jpg', { text: 'My text' });
-    }
+    var input = document.createElement('input');
+    input.setAttribute('type', 'file');
+    input.setAttribute('accept', 'image/*');
 
-    /* Provide image and alt text for the image dialog */
-    if (meta.filetype === 'image') {
-      callback('https://www.google.com/logos/google.jpg', { alt: 'My alt text' });
-    }
+    /*
+      Note: In modern browsers input[type="file"] is functional without
+      even adding it to the DOM, but that might not be the case in some older
+      or quirky browsers like IE, so you might want to add it to the DOM
+      just in case, and visually hide it. And do not forget do remove it
+      once you do not need it anymore.
+    */
 
-    /* Provide alternative source and posted for the media dialog */
-    if (meta.filetype === 'media') {
-      callback('movie.mp4', { source2: 'alt.ogg', poster: 'https://www.google.com/logos/google.jpg' });
-    }
-  },
+    input.onchange = function () {
+      var file = this.files[0];
+
+      var reader = new FileReader();
+      reader.onload = function () {
+        /*
+          Note: Now we need to register the blob in TinyMCEs image blob
+          registry. In the next release this part hopefully won't be
+          necessary, as we are looking to handle it internally.
+        */
+        var id = 'blobid' + (new Date()).getTime();
+        var blobCache =  tinymce.activeEditor.editorUpload.blobCache;
+        var base64 = reader.result.split(',')[1];
+        var blobInfo = blobCache.create(id, file, base64);
+        blobCache.add(blobInfo);
+
+        /* call the callback and populate the Title field with the file name */
+        cb(blobInfo.blobUri(), { title: file.name });
+      };
+      reader.readAsDataURL(file);
+  }
+},
   templates: [
         { title: 'New Table', description: 'creates a new table', content: '<div class="mceTmpl"><table width="98%%"  border="0" cellspacing="0" cellpadding="0"><tr><th scope="col"> </th><th scope="col"> </th></tr><tr><td> </td><td> </td></tr></table></div>' },
     { title: 'Starting my story', description: 'A cure for writers block', content: 'Once upon a time...' },
