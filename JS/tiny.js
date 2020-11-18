@@ -78,6 +78,7 @@ tinymce.init({
           text: 'Annotate',
           onAction: function() {
             var mycommentID = $.trim($.get('comment.php', function(data, status) { console.log(data); return data;}));
+            console.log(mycommentID);
             var comment = prompt('Comment with?');
             editor.annotator.annotate('alpha', {
               uid: mycommentID.text,
