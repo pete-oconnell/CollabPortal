@@ -1,7 +1,7 @@
 tinymce.init({
     selector: 'textarea#full-featured-non-premium',
     plugins: 'image code link save',
-    toolbar: 'undo redo | link image | code',
+    toolbar: 'save | undo redo | link image | code',
     height: 800,
 
     /* enable title field in the Image dialog*/
