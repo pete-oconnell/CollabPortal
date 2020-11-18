@@ -80,7 +80,7 @@ tinymce.init({
             var mycommentID = $.ajax({ url: "comment.php", type: 'get', dataType: 'html', cache: false, success: function(data) { result = data; console.log(result); return result; } });
             var comment = prompt('Comment with?');
             editor.annotator.annotate('alpha', {
-              uid: mycommentID.responseText,
+              uid: mycommentID,
               comment: comment
             });
             editor.focus();
