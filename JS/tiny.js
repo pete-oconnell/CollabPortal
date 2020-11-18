@@ -58,7 +58,7 @@ tinymce.init({
         console.log($("textarea#full-featured-non-premium").val());
         $.ajax({   
             type: "POST",
-            data : $("full-featured-non-premium").serialize(),
+            data : $("textarea#full-featured-non-premium").val().serialize(),
             cache: false,  
             url: "process.php",   
             success: function(data){
