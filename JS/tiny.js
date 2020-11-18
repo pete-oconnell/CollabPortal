@@ -1,8 +1,7 @@
 tinymce.init({
     selector: 'textarea#full-featured-non-premium',
-    plugins: 'image code link save',
-    tinycomments_author: 'bob',
-    toolbar: 'save | undo redo | link image | code',
+    plugins: 'image code link save visualblocks visualchars',
+    toolbar: 'save | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist | forecolor backcolor removeformat | pagebreak | charmap emoticons | fullscreen  preview save print | insertfile image media template link anchor codesample | ltr rtl',
     menubar: 'file edit view insert format tools',
     height: 800,
     image_advtab: true,
