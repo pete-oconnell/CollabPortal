@@ -119,6 +119,7 @@ include_once("template/header.php");
   <p>Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.</p>
   <p>Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.</p>
 </textarea>
+<button name="submitbtn"></button>
   </form>
         </div>
     </div>
