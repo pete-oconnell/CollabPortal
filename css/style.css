@@ -4,6 +4,7 @@ body
 {
     -webkit-font-smoothing: antialiased;
     font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
     font-weight: normal;
     overflow-x: hidden;
     overflow-y: auto;
@@ -39,6 +40,7 @@ body
 { 
     grid-area: left-content; 
     margin-right:5px;
+    
 }
 .right-content 
 { 
