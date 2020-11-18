@@ -2,7 +2,7 @@
 
 session_start();
 
-$user['fullname'] = "Pete O'Connell";
+$_SESSION['fullname'] = "Pete O'Connell";
 $user['permission'] = 0;
 $user['lastvisited'] = 0;
 
