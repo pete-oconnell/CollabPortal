@@ -42,7 +42,8 @@ body
 .margin-5 { margin: 5px; }
 .margin-10 { margin: 10px; }
 
-.grid-container {
+.grid-container 
+{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -51,8 +52,17 @@ body
       "header header header header"
       "left-content content content right-content"
       "left-content content content right-content";
-  }
-  .header { grid-area: header; }
-  .left-content { grid-area: left-content; }
-  .right-content { grid-area: right-content; }
-  .content { grid-area: content; }
+}
+.header 
+{ 
+    grid-area: header;
+    background: #206EA7;   
+}
+  
+.left-content { grid-area: left-content; }
+.right-content { grid-area: right-content; }
+.content 
+{ 
+    grid-area: content;
+    background: #222;
+}
