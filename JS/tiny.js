@@ -1,6 +1,6 @@
 tinymce.init({
     selector: 'textarea#full-featured-non-premium',
-    plugins: 'image code',
+    plugins: 'image code link save',
     toolbar: 'undo redo | link image | code',
     height: 800,
 
