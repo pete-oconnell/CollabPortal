@@ -3,9 +3,10 @@ include_once("template/header.php");
 ?>
 
 <body>
+<script src="JS/tinymce/jquery.tinymce.min.js"></script>
     <script src="JS/tinymce/tinymce.min.js"></script>
     <script src="JS/tiny.js"></script>
-    <script src="JS/tinymce/jquery.tinymce.min.js"></script>
+    
 <div class="grid-container">
     <div class="header"><div class="float-left margin-5"><img src="img/icon.png"> <h1>Collaboration Portal</h1></div><div class="float-right margin-10">right content</div></div>
     <div class="left-content">
