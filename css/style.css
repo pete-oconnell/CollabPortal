@@ -37,15 +37,8 @@ body
     padding:10px;
 }
 
-.float-left
-{
-    float: left;
-}
-
-.float-right
-{
-    float: right;
-}
+.float-left { float: left; }
+.float-right { float: right; }
 
 .grid-container {
     display: grid;
