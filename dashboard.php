@@ -13,6 +13,15 @@ include_once("template/header.php");
             <li>[av] [user] [activity] [page]</li>
             <li>[av] [user] [activity] [page]</li>
             <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            <li>[av] [user] [activity] [page]</li>
+            
         </ul>
     </div>
     <div class="right-content">this is the right content</div>
