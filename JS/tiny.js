@@ -81,7 +81,7 @@ tinymce.init({
 
             var comment = prompt('Comment with?').delay(1000);
             
-            console.log(mycommentID.responseText);
+            console.log(mycommentID);
             editor.annotator.annotate('alpha', {
               uid: mycommentID.responseText,
               comment: comment
