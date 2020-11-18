@@ -54,6 +54,7 @@ h3
     grid-area: left-content; 
     margin-left: 5px;
     margin-right:5px;
+    background: #222;
 }
 
 .left-content li
@@ -61,15 +62,11 @@ h3
     list-style-type: none;
 }
 
-.recent
-{
-    background: #222;
-}
-
 .right-content 
 { 
     grid-area: right-content; 
     margin-left: 10px;
+    background: #222;
 
 }
 .content 
