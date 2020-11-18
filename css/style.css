@@ -50,7 +50,7 @@ body
       "header header header header header header"
       "left-content content content content content right-content"
       "left-content content content content content right-content";
-    grid-template-rows: 110px 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
 }
 .header 
 { 
