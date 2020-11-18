@@ -58,7 +58,8 @@ tinymce.init({
   contextmenu: 'link image imagetools table',
   skin: useDarkMode ? 'oxide-dark' : 'oxide',
   content_css: useDarkMode ? 'dark' : 'default',
-  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }'
+  content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
+  image_upload_url: 'postAccept.php'
  });
 
 
