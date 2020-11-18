@@ -1,6 +1,6 @@
 tinymce.init({
     selector: 'textarea#full-featured-non-premium',
-    plugins: 'image code link save tinycomments',
+    plugins: 'image code link save',
     tinycomments_author: 'bob',
     toolbar: 'save | undo redo | link image | code | annotate-alpha',
     menubar: 'file edit view insert format tools tc',
