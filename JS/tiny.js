@@ -78,7 +78,9 @@ tinymce.init({
   skin: useDarkMode ? 'oxide-dark' : 'oxide',
   content_css: useDarkMode ? 'dark' : 'default',
   content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
-  image_upload_url: 'postAccept.php'
+  image_upload_url: 'postAccept.php',
+  automatic_uploads: true,
+  file_picker_types: 'image'
  });
 
 
