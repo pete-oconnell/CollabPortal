@@ -79,10 +79,10 @@ tinymce.init({
           onAction: function() {
             var mycommentID = $.ajax({ url: "comment.php", type: 'get', dataType: 'html', cache: false, success: function(data) { result = data; console.log(result); return result; } });
             var comment = prompt('Comment with?');
-            editor.annotator.annotate('alpha', {
-              uid: mycommentID,
-              comment: comment
-            });
+            //editor.annotator.annotate('alpha', {
+            //  uid: mycommentID,
+            //  comment: comment
+            //});
             editor.focus();
           },
           onSetup: function (btnApi) {
