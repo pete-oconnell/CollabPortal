@@ -33,7 +33,7 @@ h3
       "header header header header header header"
       "left-content content content content content right-content"
       "left-content content content content content right-content";
-    grid-template-rows: 60px 1fr 1fr;
+    grid-template-rows: 90px 1fr 1fr;
 }
 .header 
 { 
@@ -42,6 +42,8 @@ h3
     margin-bottom: 10px; 
     color: #FFF; 
 }
+
+.header img
 
 .header h1
 {
