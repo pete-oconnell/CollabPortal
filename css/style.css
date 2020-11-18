@@ -72,4 +72,5 @@ body
 { 
     grid-area: content;
     background: #222;
+    margin:5px;
 }
