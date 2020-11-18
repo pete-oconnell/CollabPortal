@@ -76,6 +76,7 @@ include_once("template/header.php");
     </div>
     <div class="content">
         <div class="nfi">
+            <form action="new_save.php" method="post">
         <textarea id="full-featured-non-premium"><p style="text-align: center; font-size: 15px;"><img title="TinyMCE Logo" src="//www.tiny.cloud/images/glyph-tinymce@2x.png" alt="TinyMCE Logo" width="110" height="97" />
   </p>
   <h2 style="text-align: center;">Welcome to the TinyMCE Cloud demo!</h2>
@@ -118,6 +119,7 @@ include_once("template/header.php");
   <p>Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.</p>
   <p>Thanks for supporting TinyMCE! We hope it helps you and your users create great content.<br>All the best from the TinyMCE team.</p>
 </textarea>
+  </form>
         </div>
     </div>
 </div>
