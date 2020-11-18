@@ -44,7 +44,14 @@ h3
 
 .header img
 {
-    width:30px;
+    width: 3em;
+    height: 3em;
+    display: inline-block;
+    position: relative;
+    bottom: -0.105em;
+    margin-inline-end: 6px;
+    pointer-events: none;
+    fill: currentColor;
 }
   
 .left-content 
