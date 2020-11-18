@@ -47,7 +47,11 @@ h3
     grid-area: left-content; 
     margin-left: 5px;
     margin-right:5px;
-    
+}
+
+.left-content li
+{
+    list-style-type: none;
 }
 .right-content 
 { 
