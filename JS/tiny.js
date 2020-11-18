@@ -77,11 +77,8 @@ tinymce.init({
         editor.ui.registry.addButton('annotate-alpha', {
           text: 'Annotate',
           onAction: function() {
-            var mycommentID = $.ajax({ url: "comment.php", type: 'get', dataType: 'html', cache: false, success: function(data) { result = data; return result; } });
-            $.delay(1000);
+            var mycommentID = $.ajax({ url: "comment.php", type: 'get', dataType: 'html', cache: false, success: function(data) { result = data; console.log(result); return result; } });
             var comment = prompt('Comment with?');
-            
-            console.log(mycommentID);
             editor.annotator.annotate('alpha', {
               uid: mycommentID.responseText,
               comment: comment
