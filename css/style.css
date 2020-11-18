@@ -44,7 +44,8 @@ h3
 
 .header img
 {
-    height:50px;
+    height:40px;
+    display: inline-block;
 }
   
 .left-content 
