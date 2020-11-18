@@ -55,7 +55,7 @@ tinymce.init({
     },
     content_style: 'body { font-family:Helvetica,Arial,sans-serif; font-size:14px }',
     save_onsavecallback: function () { 
-        console.log($("full-featured-non-premium").serialize());
+        console.log($("textarea#full-featured-non-premium").val());
         $.ajax({   
             type: "POST",
             data : $("full-featured-non-premium").serialize(),
