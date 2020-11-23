@@ -3,6 +3,7 @@ include_once("template/header.php");
 ?>
 
 <body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <div class="grid-container">
     <div class="header"><div class="float-left margin-5"><img src="img/icon.png"> <h1>Collaboration Portal</h1></div><div class="float-right margin-10">right content</div></div>
     <div class="left-content">
@@ -79,6 +80,7 @@ include_once("template/header.php");
         </div>
     </div>
 </div>
+
 
 <?php
 include_once("template/footer.php");
