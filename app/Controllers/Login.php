@@ -1,14 +1,14 @@
 <?php namespace App\Controllers;
 
-class Login extends CI_Controller
+use CodeIgniter\Controller;
+
+class Login extends Controller
 {
 	public function index()
 	{
-        $this->load->view('template/header', $data);
-        $this->load->view('login', $data);
-        $this->load->view('template/footer', $data);
+        echo view('template/header', $data);
+        echo view('login', $data);
+        echo view('template/footer', $data);
 	}
-
-	//--------------------------------------------------------------------
 
 }
