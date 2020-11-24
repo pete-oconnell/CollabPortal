@@ -31,5 +31,5 @@ body
     grid-template-areas:
       "left-content content content content content right-content"
       "left-content content content content content right-content";
-    grid-template-rows: 90px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
