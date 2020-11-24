@@ -7,5 +7,5 @@
 </head>
 <body>
     <header>
-        <div class="nav">this is the nav bar</div>
+        <div class="nav"><div class="float-left margin-5"><img src="img/icon.png"> <h1>Collaboration Portal</h1></div><div class="float-right margin-10">right content</div></div>
     </header>
