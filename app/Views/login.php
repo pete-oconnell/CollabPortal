@@ -1,1 +1,1 @@
-<?php echo "hello<br>this<br>is<br>the<br>login<br>page";
+<div class="content"><?php echo "hello<br>this<br>is<br>the<br>login<br>page"; ?> </div>
