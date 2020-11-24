@@ -34,9 +34,15 @@ body
     grid-template-rows: 1fr 1fr;
 }
 
-.left-content { grid-area: left-content; }
+.left-content { 
+    grid-area: left-content; 
+    font-size: 12px;
+}
 .main-content { 
     grid-area: main-content; 
-    font-size: 10px;
+    font-size: 12px;
 }
-.right-content { grid-area: right-content; }
+.right-content { 
+    grid-area: right-content; 
+    font-size: 12px;
+}
