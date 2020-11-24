@@ -12,6 +12,11 @@ body
     color: #FFF;
 }
 
+.header h1
+{
+    display: inline;
+}
+
 .float-left { float: left; }
 .float-right { float: right; }
 .margin-5 { margin: 5px; }
