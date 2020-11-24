@@ -33,3 +33,7 @@ body
       "left-content main-content main-content main-content main-content right-content";
     grid-template-rows: 1fr 1fr;
 }
+
+.left-content { grid-area: left-content; }
+.main-content { grid-area: main-content; }
+.right-content { grid-area: right-content; }
