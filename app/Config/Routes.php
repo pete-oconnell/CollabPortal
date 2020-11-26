@@ -49,3 +49,13 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 {
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+
+//First come first served
+
+$routes->add('Login', 'Login');
+$routes->add('(:any)/(:any)/Add', 'Section::addSectionPage/$2');
+$routes->add('(:any)/(:any)/(:any)/Edit', 'Page::editPageContent/$3');
+$routes->add('(:any)/(:any)/(:any)', 'Page::getPageContent/$3');
+$routes->add('(:any)/(:any)', 'Section::getSectionPages/$2');
+$routes->add('(:any)', 'Product::getProductSections/$1');
+

@@ -21,7 +21,7 @@ class App extends BaseConfig
 	| environments.
 	|
 	*/
-	public $baseURL = 'http://ci.archestra.co.uk/';
+	public $baseURL = 'http://localhost/ci/';
 
 	/*
 	|--------------------------------------------------------------------------

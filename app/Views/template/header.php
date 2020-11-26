@@ -7,5 +7,5 @@
 </head>
 <body>
     <header>
-        <div class="nav"><div class="float-left margin-5"><img src="img/icon.png"><h1>Collaboration Portal</h1></div><div class="float-right margin-10">right content</div></div>
+        <div class="nav"><div class="float-left margin-5"><img src="img/icon.png"><h1>Collaboration Portal</h1></div><div class="float-right margin-10"><?php if (isset($account['fullname'])) { echo "Welcome ".$account['fullname'];} ?></div></div>
     </header>
