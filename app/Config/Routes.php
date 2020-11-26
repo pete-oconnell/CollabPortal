@@ -52,11 +52,11 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 
 //First come first served
 
-$routes->add('dashboard', 'dashboard');
-$routes->add('login', 'login');
-$routes->add('(:any)/(:any)/Add', 'Section::addSectionPage/$2');
-$routes->add('(:any)/(:any)/(:any)/Edit', 'Page::editPageContent/$3');
-$routes->add('(:any)/(:any)/(:any)', 'Page::getPageContent/$3');
+$routes->add('Dashboard', 'Dashboard');
+$routes->add('Login', 'Login');
+$routes->add('(:any)/(:any)/Add', 'Section::addSectionPage/$1/$2');
+$routes->add('(:any)/(:any)/(:any)/Edit', 'Page::editPageContent/$1/$2/$3');
+$routes->add('(:any)/(:any)/(:any)', 'Page::getPageContent/$1/$2/$3');
 $routes->add('(:any)/(:any)', 'Section::getSectionPages/$1/$2');
 $routes->add('(:any)', 'Product::getProductSections/$1');
 

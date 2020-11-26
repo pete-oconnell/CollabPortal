@@ -18,6 +18,8 @@ class Product extends BaseController
         
         public function getProductSections($product)
         {
+                $data['slug'] = array();
+                array_push($data['slug'], "Dashboard", $product);
                 $product = str_replace("-", " ", $product);
                 $session = \Config\Services::session($config);
                 $data['user'] = $session->get('user');

@@ -2,7 +2,7 @@
 <div class="left-content"></div>
 <div class="main-content">
 <span class="error"><?php \Config\Services::validation()->listErrors(); ?></span>
-<form action="/login" method="post">
+<form action="/Login" method="post">
     <?= csrf_field() ?>
 
     <label for="email">Email Address</label>

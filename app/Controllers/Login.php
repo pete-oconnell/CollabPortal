@@ -14,7 +14,7 @@ class Login extends BaseController
                 {
                         $data['user'] = $model->login(esc($this->request->getPost('email')), esc($this->request->getPost('password')));
                         $session->set('user', $data['user']);
-                        return redirect()->to('dashboard');
+                        return redirect()->to('Dashboard');
                 }
                 else
                 {

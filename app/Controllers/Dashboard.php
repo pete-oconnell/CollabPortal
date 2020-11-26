@@ -8,6 +8,8 @@ class Dashboard extends BaseController
     
 	public function index()
 	{
+        $data['slug'] = array();
+        array_push($data['slug'], "Dashboard");
         $session = \Config\Services::session($config);
         $data['user'] = $session->get('user');
         if (!isset($data['user'][0]->fullname))

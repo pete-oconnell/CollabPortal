@@ -1,6 +1,3 @@
-<div class="grid-container">
-<div class="left-content"><?php include_once('template/left-content.php'); ?></div>
-<div class="main-content">
 <?php if (isset($product))
 {
  echo "<h1>".$product."</h1><br><br>";

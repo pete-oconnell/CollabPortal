@@ -17,6 +17,8 @@ class Section extends BaseController
         
         public function getSectionPages($product, $section)
         {
+            $data['slug'] = array();
+            array_push($data['slug'], "Dashboard", $product, $section);
             $section = str_replace("-", " ", $section);
             $product = str_replace("-", " ", $product);
             $session = \Config\Services::session($config);

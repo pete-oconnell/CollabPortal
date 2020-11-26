@@ -1,6 +1,3 @@
-<div class="grid-container">
-<div class="left-content">left content</div>
-<div class="main-content">
 <?php if (isset($products))
 {
  foreach($products as $product)
