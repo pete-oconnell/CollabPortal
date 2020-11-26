@@ -18,7 +18,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultMethod('index');
-$routes->setTranslateURIDashes(false);
+$routes->setTranslateURIDashes(true);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
@@ -52,10 +52,11 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 
 //First come first served
 
-$routes->add('Login', 'Login');
+$routes->add('dashboard', 'dashboard');
+$routes->add('login', 'login');
 $routes->add('(:any)/(:any)/Add', 'Section::addSectionPage/$2');
 $routes->add('(:any)/(:any)/(:any)/Edit', 'Page::editPageContent/$3');
 $routes->add('(:any)/(:any)/(:any)', 'Page::getPageContent/$3');
-$routes->add('(:any)/(:any)', 'Section::getSectionPages/$2');
+$routes->add('(:any)/(:any)', 'Section::getSectionPages/$1/$2');
 $routes->add('(:any)', 'Product::getProductSections/$1');
 

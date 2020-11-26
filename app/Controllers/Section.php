@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-class Section extends Controller
+class Section extends BaseController
 {
 	public function index()
 	{
@@ -15,9 +15,21 @@ class Section extends Controller
         echo "Hello product";
     }
         
-        public function getSectionPages($section)
+        public function getSectionPages($product, $section)
         {
-                echo "Hello section ".$section;
+            $section = str_replace("-", " ", $section);
+            $product = str_replace("-", " ", $product);
+            $session = \Config\Services::session($config);
+            $data['user'] = $session->get('user');
+            if (!isset($data['user'][0]->fullname))
+            {
+                return redirect()->to('/ci');
+            }
+                $data['section'] = $section;
+                $data['product'] = $product;
+                echo view('template/header', $data);
+                echo view('section', $data);
+                echo view('template/footer', $data);
         }
 
         public function addSectionPage($section)

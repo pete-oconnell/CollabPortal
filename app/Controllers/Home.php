@@ -3,7 +3,7 @@
 use App\Models\User_model;
 use CodeIgniter\Controller;
 
-class Home extends Controller
+class Home extends BaseController
 {
 	public function __construct()
 	{

@@ -4,6 +4,28 @@ body
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+a:visited
+{
+    color: #000;
+    text-decoration: none;
+}
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+.align-right 
+{
+    text-align: right;
+}
+
 .nav
 {
     background: linear-gradient(90deg,#0d0510 0,#4e047b 100%);
@@ -11,6 +33,15 @@ body
     height: 4.4375rem;
     color: #FFF;
     margin-bottom: 20px;
+}
+
+.nav a
+{
+    color: #FFF;
+    font-size: 10px;
+    display: inline;
+    text-align: right;
+    text-decoration: none;
 }
 
 .nav h1

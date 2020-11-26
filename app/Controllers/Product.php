@@ -1,8 +1,9 @@
 <?php namespace App\Controllers;
 
 use CodeIgniter\Controller;
+use App\Models\Products_model;
 
-class Product extends Controller
+class Product extends BaseController
 {
 	public function index()
 	{
@@ -12,12 +13,24 @@ class Product extends Controller
         echo view('login', $data);
         echo view('template/footer', $data);**/
 
-        echo "Hello product";
+        //echo "Hello product";
         }
         
         public function getProductSections($product)
         {
-                echo "Hello product ".$product;
+                $product = str_replace("-", " ", $product);
+                $session = \Config\Services::session($config);
+                $data['user'] = $session->get('user');
+                if (!isset($data['user'][0]->fullname))
+                {
+                        return redirect()->to('/ci');
+                }
+                $data['product'] = $product;
+                $model = new Products_model();
+                $data['sections'] = $model->get_sections($product);
+                echo view('template/header', $data);
+                echo view('product', $data);
+                echo view('template/footer');
         }
 
 }

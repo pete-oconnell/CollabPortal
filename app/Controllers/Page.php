@@ -2,7 +2,7 @@
 
 use CodeIgniter\Controller;
 
-class Page extends Controller
+class Page extends BaseController
 {
 	public function index()
 	{
