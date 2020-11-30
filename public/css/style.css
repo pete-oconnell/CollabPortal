@@ -112,3 +112,7 @@ h1
 .slug li:not(:last-child):after {
     content: " -";
 }
+
+.slug li:last-child {
+    pointer-events: none;
+}
